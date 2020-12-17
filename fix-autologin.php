@@ -7,7 +7,7 @@
  * Author URI:      https://agencia.fixonweb.com.br
  * Text Domain:     fix-autologin
  * Domain Path:     /languages
- * Version:         0.1.3
+ * Version:         0.1.4
  *
  * @package         Fix-Autologin
  */
@@ -26,7 +26,7 @@ function fix1608230887_activation_hook() {
 add_action('wp_enqueue_scripts', "fix1608230887_enqueue_scripts");
 function fix1608230887_enqueue_scripts(){
     wp_enqueue_script( 'jquery-validate-min', plugin_dir_url( __FILE__ ) . '/js/jquery.validate.min.js', array( 'jquery' )  );
-    wp_enqueue_style('fix1608230887_style', plugin_dir_url(__FILE__) . '/css/fix1608230887_style.css', array(), '0.1.0', 'all');
+    // wp_enqueue_style('fix1608230887_style', plugin_dir_url(__FILE__) . '/css/fix1608230887_style.css', array(), '0.1.0', 'all');
 }
 
 
